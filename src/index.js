@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import './style.css';
 
 import printMe from './print.js';
 
@@ -6,9 +7,11 @@ import printMe from './print.js';
    const element = document.createElement('div');
   const btn = document.createElement('button');
 
-   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+   element.innerHTML = _.join(['leaderboard', 'set-up'], ' ');
+   element.classList.add('hello');
 
-  btn.innerHTML = 'Click me';
+
+  btn.innerHTML = 'me';
   btn.onclick = printMe;
 
   element.appendChild(btn);
