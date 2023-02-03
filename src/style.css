@@ -1,7 +1,8 @@
 body {
-  background-color: rgb(221, 216, 209);
   margin: 0;
   font-family: cursive;
+  background: #2a2b2a;
+  color: rgb(201, 78, 164);
 }
 
 h1 {
@@ -25,8 +26,10 @@ h1 {
 .baseBtn {
   height: 25px;
   width: 75px;
-  background: none;
-  box-shadow: 2px 2px #000;
+  background: #4f4f57;
+  border-radius: 15px;
+  border-color: #fff;
+  color: #fff;
 }
 
 .baseBtn:hover {
@@ -38,10 +41,12 @@ h1 {
   margin: 0;
   padding: 0;
   border: solid #000 2px;
+  max-height: 290px;
+  overflow: auto;
 }
 
 #scoreList li {
-  background: #ddd;
+  background: #36373c;
   padding: 3px;
 }
 
