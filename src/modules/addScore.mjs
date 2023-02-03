@@ -1,10 +1,15 @@
-const scoreHTML = document.querySelector('#scoreList');
-
 const addScore = (name, value) => {
-  const scoreElement = document.createElement('li');
-
-  scoreElement.innerHTML = `${name} : ${value}`;
-  scoreHTML.appendChild(scoreElement);
+  fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/YWd5s9CUJs7cCETUjmBx/scores/', {
+    method: 'POST',
+    body: JSON.stringify({
+      user: name,
+      score: value,
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  })
+    .then(() => {
+    });
 };
-
 export default addScore;

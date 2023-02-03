@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leader board</title>
-</head>
-<body>
+  <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="print.bundle.js"></script></head>
+  <body>
     <h1>Leaderboard</h1>
     <section id="main">
       <div>
         <div class="title">
           <h2>Recent Scores</h2>
-          <button class="baseBtn" type="button" name="refresh">Refresh</button>
+          <button class="baseBtn" id="freshBtn" type="button" name="refresh">
+            Refresh
+          </button>
         </div>
-        <ul id="scoreList">
-          <li>Name: 100</li>
-          <li>Name: 20</li>
-          <li>Name: 50</li>
-          <li>Name: 78</li>
-        </ul>
+        <ul id="scoreList"></ul>
       </div>
       <form id="addScore">
         <h2 class="title">Add your score</h2>
-        <input class="textBox" type="text" name="name" value="" placeholder="Your name" required>
-        <input class="textBox" type="number" name="score" value="" placeholder="Your score" required>
-        <input class="baseBtn" type="submit" name="submitScore" value="Submit">
+        <input
+          class="textBox"
+          type="text"
+          name="name"
+          value=""
+          placeholder="Your name"
+          required
+        />
+        <input
+          class="textBox"
+          type="number"
+          name="score"
+          value=""
+          placeholder="Your score"
+          required
+        />
+        <input
+          class="baseBtn"
+          id="submitBtn"
+          type="submit"
+          name="submitScore"
+          value="Submit"
+        />
       </form>
     </section>
-</body>
+  </body>
 </html>
